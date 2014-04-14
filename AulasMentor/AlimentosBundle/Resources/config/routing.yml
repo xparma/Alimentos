@@ -1,0 +1,19 @@
+JAMAB_homepage:
+  pattern:  /
+  defaults: { _controller: tsjAulasMentorAlimentosBundle:Default:index }
+
+JAMAB_listar:
+  pattern:  /listar
+  defaults: { _controller: tsjAulasMentorAlimentosBundle:Default:listar }
+
+JAMAB_insertar:
+  pattern:  /insertar
+  defaults: { _controller: tsjAulasMentorAlimentosBundle:Default:insertar }
+
+JAMAB_buscar:
+  pattern:  /buscar
+  defaults: { _controller: tsjAulasMentorAlimentosBundle:Default:buscarPorNombre }
+
+JAMAB_ver:
+  pattern:  /ver/{id}
+  defaults: { _controller: tsjAulasMentorAlimentosBundle:Default:ver }

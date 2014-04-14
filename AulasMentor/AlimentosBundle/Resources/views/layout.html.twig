@@ -1,0 +1,29 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+ <link href="{{ asset('bundles/tsjaulasmentoralimentos/css/estilo.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div id="menu">
+        <hr />
+        <a href="{{path('JAMAB_homepage')}}">inicio</a>
+        <a href="{{path('JAMAB_listar')}}">ver alimentos</a> | 
+        <a href="{{path('JAMAB_insertar')}}">insertar alimentos</a> | 
+        <a href="{{path('JAMAB_buscar')}}">buscar por nombre</a> | 
+        <a href="#">buscar por energía</a> 
+        <hr />
+    </div>
+        
+    <div id="contenido">
+      {% block contenido %}
+          
+      {% endblock %}
+    </div>
+    
+    <div id="pie">
+        <hr />
+        <div align="center">-- Pie de página --</div>
+    </div>
+
+{% endblock %}
